@@ -96,3 +96,7 @@ body {
 .menu .is open .menu-dropdawn {
   display: block;
 }
+
+.site-nav__item--current {
+  color: tomato;
+}
