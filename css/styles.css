@@ -1,102 +1,64 @@
-:root {
-  box-sizing: border-box;
+body {
+  font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
 }
 
-body {
+.magic-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
-/*******************************************
-********** ССЫЛКИ *************************
-*******************************************/
-a:link {
-  color: #1476bb;
-  font-weight: bold;
+
+.magic-btn > .icon {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.site-nav__link {
+  color: currentColor;
   text-decoration: none;
 }
-a:visited {
-  color: #1414bb;
-}
-a:hover {
+
+.site-nav__link:hover {
   text-decoration: underline;
 }
-a:active {
-  color: #b45514;
-}
-img {
-  height: auto;
-}
-.container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 45px;
-  margin-right: auto;
-  margin-left: auto;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-}
-ul {
-  list-style: none;
+
+.site-nav__link--current {
+  color: tomato;
 }
 
-.container {
-  width: 100%;
-}
-.nav {
+.color-picker__option {
   display: inline-block;
-}
-body {
-  position: relative;
-}
-.nav__mobile-menu {
-  position: absolute;
-  top: 16px;
-  right: 25px;
-  border: 0;
-  background-color: transparent;
-  font-size: 15px;
-  width: 10px;
-  line-height: 5px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 5px;
-}
-.nav__mobile-menu::after {
-  position: absolute;
-  top: 0.1em;
-  left: 0.1em;
-  display: block;
-  content: "\2261";
-  text-indent: 0;
+  width: 64px;
+  height: 64px;
+  margin: 4px;
+  border: none;
+  outline: none;
   cursor: pointer;
 }
-.menu-dropdawn {
-  display: none;
-  position: absolute;
-  right: 0;
-  left: 0;
-  margin: 0;
-}
-.nav__button {
-  display: none;
-  position: absolute;
-  right: 0;
-  left: 0;
-  margin: 0;
+
+.transaction-table {
+  border-collapse: collapse;
 }
 
-.menu .is open .menu-dropdawn {
-  display: block;
+.transaction-table th,
+.transaction-table td {
+  padding: 8px;
+  border: 1px solid #2a2a2a;
 }
 
-.site-nav__item--current {
-  color: tomato;
+.title__link {
+  display: inline-flex;
+  margin-left: 40px;
 }
