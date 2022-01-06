@@ -9,21 +9,21 @@
 const titleEl = document.createElement('h1');
 titleEl.classList.add('page-title');
 titleEl.textContent = 'Это заголовок страницы :)';
-// console.log(titleEl);
+console.log(titleEl);
 
-// document.body.appendChild(titleEl);
+document.body.appendChild(titleEl);
 
-/*
- * Создаём изображение
- * https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988_1280.jpg
- * valais-alpine-mountains-glacier
- */
+// /*
+//  * Создаём изображение
+//  * https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988_1280.jpg
+//  * valais-alpine-mountains-glacier
+//  */
 const imageEl = document.createElement('img');
 imageEl.src =
   'https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988_1280.jpg';
 imageEl.alt = 'valais-alpine-mountains-glacier';
 imageEl.width = 320;
-// console.log('imageEl', imageEl);
+console.log('imageEl', imageEl);
 
 // document.body.appendChild(imageEl);
 
@@ -38,15 +38,20 @@ heroEl.append(titleEl, imageEl);
 const navItemEl = document.createElement('li');
 navItemEl.classList.add('site-nav__item');
 
+
 const navLinkEl = document.createElement('a');
 navLinkEl.classList.add('site-nav__link');
 navLinkEl.textContent = 'Личный кабинет';
 navLinkEl.href = '/profile';
 
+
+
+
 navItemEl.appendChild(navLinkEl);
-// console.log(navItemEl);
+console.log(navItemEl);
 
 const navEl = document.querySelector('.site-nav');
+
 
 // navEl.appendChild(navItemEl);
 navEl.insertBefore(navItemEl, navEl.firstElementChild);
