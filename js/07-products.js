@@ -15,33 +15,48 @@ import products from './data/proucts.js';
 */
 }
 
+
+
+
+
 /*
  * Пишем функцию для создания карточки продукта
  */
 
-const productsContainerEl = document.querySelector('.js-products');
+
+
+
+
+console.log(products);
+
 
 const makeProductCard = ({ name, description, price }) => {
   const productEl = document.createElement('article');
   productEl.classList.add('product');
 
-  const nameEl = document.createElement('h2');
+  const nameEl = document.createElement("h2");
   nameEl.textContent = name;
-  nameEl.classList.add('product__name');
+  productEl.classList.add('product__name');
+
 
   const descrEl = document.createElement('p');
   descrEl.textContent = description;
   descrEl.classList.add('product__descr');
 
   const priceEl = document.createElement('p');
-  priceEl.textContent = `Цена: ${price} кредитов`;
+  priceEl.textContent = `Цена:${price} кредитов`;
   priceEl.classList.add('product__price');
 
   productEl.append(nameEl, descrEl, priceEl);
-
   return productEl;
+
+
+
 };
 
+// console.log(makeProductCard(products[1]));
+
+const productsContainerEl = document.querySelector('.js-products')
 const elements = products.map(makeProductCard);
 
 console.log(elements);

@@ -28,9 +28,9 @@ console.log('imageEl', imageEl);
 // document.body.appendChild(imageEl);
 
 const heroEl = document.querySelector('.hero');
-// heroEl.appendChild(titleEl);
-// heroEl.appendChild(imageEl);
-heroEl.append(titleEl, imageEl);
+heroEl.appendChild(titleEl);
+heroEl.appendChild(imageEl);
+// heroEl.append(titleEl, imageEl);
 
 /*
  * Создаём и добавляем новый пункт меню
